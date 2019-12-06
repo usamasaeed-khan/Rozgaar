@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ForgotPassworActivity">
+
+    <include layout="@layout/app_bar_layout"
+            android:id="@+id/login_toolbar"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/forgot_password_email"
+            android:hint="Enter Email to Verify"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/verify_email_btn"
+            android:text="VERIFY EMAIL"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/send_email_btn"
+            android:text="SEND EMAIL"
+            android:layout_marginTop="40dp"
+            android:visibility="invisible"
+            android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

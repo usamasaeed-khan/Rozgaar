@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/border"
+        android:focusable="true"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/parent_layout">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/image"
+            android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+            android:id="@+id/description_text"
+            android:layout_width="270dp"
+            android:layout_height="200dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/image"
+            android:text="Canada"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+    <TextView
+            android:id="@+id/company_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/image"
+            android:text="COMPANY NAME"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    <Button
+            android:id="@+id/applyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/description_text"
+            android:background="@drawable/ic_round_button"
+            android:text="APPLY"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+</RelativeLayout>
